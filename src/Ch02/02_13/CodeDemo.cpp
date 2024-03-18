@@ -4,14 +4,28 @@
 
 #include <iostream>
 
-int main(){
-    int nums[5] = {1,23,32,24,337};
-    float result; 
+using namespace std; 
 
-    // Write your code here
+int main() {
+    int array[5]; 
+    float avg; 
+
+    cout << "Please enter 5 ints seperated by a enter" << endl; 
+    cin >> array[0]; 
+    cin.sync(); 
+    cin >> array[1]; 
+    cin.sync();
+    cin >> array[2]; 
+    cin.sync(); 
+    cin >> array[3]; 
+    cin.sync(); 
+    cin >> array[4]; 
+
+    avg = (array[0] + array[1] + array [2] + array[3] + array[4])/5.0;
+
+    cout << "the average is: " << avg << "!";  
+
+    cout << endl << endl;
+
     
-    std::cout << "The average is " << result << std::endl;
-    
-    std::cout << std::endl << std::endl;
-    return (0);
 }
